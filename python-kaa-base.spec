@@ -1,6 +1,7 @@
 %define 	module	kaa-base
-
+#
 Summary:	Base module for all Kaa modules
+Summary(pl.UTF-8):	Moduł bazowy dla wszystkich modułów Kaa
 Name:		python-%{module}
 Version:	0.1.2
 Release:	1
@@ -20,6 +21,13 @@ The module also contains a main loop (notifier). Some kaa modules like
 kaa-Display require the main loop to be running, for other modules
 like kaa-Thumb it's optional and some like kaa-Metadata don't need the
 main loop at all.
+
+%description -l pl.UTF-8
+Niniejszy moduł zawiera podstawowy kod wymagany przez wszystkie
+moduły Kaa. Zawiera także główną pętlę (notifier), której niektóre
+moduły kaa, jak np. kaa-Display, wymagają do działania. W przypadku
+pozostałych jest to opcjonalne (np. kaa-Thumb) lub też nie wymagane
+(np. kaa-Metadata).
 
 %prep
 %setup -q -n %{module}-%{version}
