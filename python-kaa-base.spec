@@ -4,7 +4,7 @@ Summary:	Base module for all Kaa modules
 Summary(pl.UTF-8):	Moduł bazowy dla wszystkich modułów Kaa
 Name:		python-%{module}
 Version:	0.1.2
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/freevo/%{module}-%{version}.tar.gz
